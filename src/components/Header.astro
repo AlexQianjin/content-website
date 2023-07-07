@@ -21,8 +21,26 @@
         <nav class="w-full lg:w-4/6 min-w-fit mx-auto">
             <ul class="flex">
                 <li class="mr-10">首页</li>
-                <li class="mr-10">软件产品</li>
-                <li class="mr-10">技术资源</li>
+                <li class="mr-10">
+                    <a href="#">软件产品</a>
+                    <ul class="nav_submenu">
+                        <li>link 1</li>
+                        <li>link 2</li>
+                        <li>link 3</li>
+                        <li>link 4</li>
+                        <li>link 5</li>
+                    </ul>
+                </li>
+                <li class="mr-10">
+                    <a href="#">技术资源</a>
+                    <ul class="nav_submenu">
+                        <li>link 1</li>
+                        <li>link 2</li>
+                        <li>link 3</li>
+                        <li>link 4</li>
+                        <li>link 5</li>
+                    </ul>
+                </li>
                 <li class="mr-10">新闻中心</li>
                 <li class="mr-10">关于我们</li>
                 <li class="mr-10">联系我们</li>
@@ -30,3 +48,17 @@
         </nav>
     </div>
 </header>
+
+<style>
+    .nav {
+    }
+
+    a:hover ~ ul {
+        display: block;
+        position: absolute;;
+    }
+
+    .nav_submenu {
+        display: none;
+    }
+</style>

@@ -19,10 +19,10 @@
     </div>
     <div>
         <nav class="w-full lg:w-4/6 min-w-fit mx-auto">
-            <ul class="flex">
-                <li class="mr-10">首页</li>
-                <li class="mr-10">
-                    <a href="#">软件产品</a>
+            <ul class="flex h-10 max-h-10">
+                <li class="mr-10 leading-10">首页</li>
+                <li class="mr-10 leading-10">
+                    <a class="block leading-10" href="#">软件产品</a>
                     <ul class="nav_submenu">
                         <li>link 1</li>
                         <li>link 2</li>
@@ -31,34 +31,89 @@
                         <li>link 5</li>
                     </ul>
                 </li>
-                <li class="mr-10">
-                    <a href="#">技术资源</a>
+                <li class="mr-10 leading-10">
+                    <a class="block leading-10" href="#">技术资源</a>
                     <ul class="nav_submenu">
-                        <li>link 1</li>
-                        <li>link 2</li>
-                        <li>link 3</li>
-                        <li>link 4</li>
-                        <li>link 5</li>
+                        <li>
+                            <a href="">Link 1</a>
+                            <ul>
+                                <li><a href="">Link 11</a></li>
+                                <li><a href="">Link 12</a></li>
+                                <li><a href="">Link 13</a></li>
+                                <li><a href="">Link 14</a></li>
+                                <li><a href="">Link 15</a></li>
+                                <li><a href="">Link 16</a></li>
+                                <li><a href="">Link 17</a></li>
+                                <li><a href="">Link 18</a></li>
+                                <li><a href="">Link 19</a></li>
+                                <li><a href="">Link 10</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Link 2</a>
+                            <ul>
+                                <li><a href="">Link 21</a></li>
+                                <li><a href="">Link 22</a></li>
+                                <li><a href="">Link 23</a></li>
+                                <li><a href="">Link 24</a></li>
+                                <li><a href="">Link 25</a></li>
+                                <li><a href="">Link 26</a></li>
+                                <li><a href="">Link 27</a></li>
+                                <li><a href="">Link 28</a></li>
+                                <li><a href="">Link 29</a></li>
+                                <li><a href="">Link 20</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Link 3</a>
+                            <ul>
+                                <li><a href="">Link 31</a></li>
+                                <li><a href="">Link 32</a></li>
+                                <li><a href="">Link 33</a></li>
+                                <li><a href="">Link 34</a></li>
+                                <li><a href="">Link 35</a></li>
+                                <li><a href="">Link 36</a></li>
+                                <li><a href="">Link 37</a></li>
+                                <li><a href="">Link 38</a></li>
+                                <li><a href="">Link 39</a></li>
+                                <li><a href="">Link 30</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-                <li class="mr-10">新闻中心</li>
-                <li class="mr-10">关于我们</li>
-                <li class="mr-10">联系我们</li>
+                <li class="mr-10 leading-10">新闻中心</li>
+                <li class="mr-10 leading-10">关于我们</li>
+                <li class="mr-10 leading-10">联系我们</li>
             </ul>
         </nav>
     </div>
 </header>
 
 <style>
-    .nav {
+    nav {
+        background-color: yellowgreen;
+    }
+    nav a {
+        background-color: green;
     }
 
-    a:hover ~ ul {
-        display: block;
-        position: absolute;;
+    a:hover ~ ul.nav_submenu {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 10rem;
+        margin-top: -0.1rem;
     }
 
     .nav_submenu {
         display: none;
+    }
+
+    .nav_submenu:hover {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 10rem;
+        margin-top: -0.1rem;
     }
 </style>

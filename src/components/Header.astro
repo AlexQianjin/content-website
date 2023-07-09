@@ -34,49 +34,119 @@
                 <li class="mr-10 leading-10">
                     <a class="block leading-10" href="#">技术资源</a>
                     <ul class="nav_submenu">
-                        <li>
-                            <a href="">Link 1</a>
+                        <li class="mr-8">
                             <ul>
-                                <li><a href="">Link 11</a></li>
-                                <li><a href="">Link 12</a></li>
-                                <li><a href="">Link 13</a></li>
-                                <li><a href="">Link 14</a></li>
-                                <li><a href="">Link 15</a></li>
-                                <li><a href="">Link 16</a></li>
-                                <li><a href="">Link 17</a></li>
-                                <li><a href="">Link 18</a></li>
-                                <li><a href="">Link 19</a></li>
-                                <li><a href="">Link 10</a></li>
+                                <a
+                                    class="block my-2 font-medium hover:underline"
+                                    >Technical Notes</a
+                                >
+                                <li>
+                                    <a
+                                        href="https://www.deepproteomics.cn/walkthrough-tutorials/"
+                                        >软件操作速览</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.deepproteomics.cn/denovo-tutorial/"
+                                        ><span
+                                            ><i>de novo</i> Sequencing 介绍</span
+                                        ></a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.deepproteomics.cn/dbscoring-tutorial/"
+                                        >数据库搜索评分指南</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.deepproteomics.cn/fdr-tutorial/"
+                                        >错误发现率 (FDR)</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.deepproteomics.cn/tutorial-peptide-feature-area/"
+                                        >Peptide Feature Area</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.deepproteomics.cn/label-free-q/"
+                                        >Label-Free 定量</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.deepproteomics.cn/quantification-algorithms/"
+                                        >定量算法</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.deepproteomics.cn/silac-quantification/"
+                                        >SILAC 定量方法</a
+                                    >
+                                </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="">Link 2</a>
+                        <li class="mr-8">
                             <ul>
-                                <li><a href="">Link 21</a></li>
-                                <li><a href="">Link 22</a></li>
-                                <li><a href="">Link 23</a></li>
-                                <li><a href="">Link 24</a></li>
-                                <li><a href="">Link 25</a></li>
-                                <li><a href="">Link 26</a></li>
-                                <li><a href="">Link 27</a></li>
-                                <li><a href="">Link 28</a></li>
-                                <li><a href="">Link 29</a></li>
-                                <li><a href="">Link 20</a></li>
+                                <a
+                                    class="block my-2 font-medium hover:underline"
+                                    >Self Help</a
+                                >
+                                <li>
+                                    <a
+                                        href="https://www.deepproteomics.cn/user-manual/"
+                                        >用户使用手册</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.deepproteomics.cn/amino-acid/"
+                                        >氨基酸质量数参考表</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.deepproteomics.cn/formats/"
+                                        >支持数据格式</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.deepproteomics.cn/versions/"
+                                        >PEAKS历史版本</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="https://www.deepproteomics.cn/faq/"
+                                        >FAQ</a
+                                    >
+                                </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="">Link 3</a>
+                        <li class="mr-8">
                             <ul>
-                                <li><a href="">Link 31</a></li>
-                                <li><a href="">Link 32</a></li>
-                                <li><a href="">Link 33</a></li>
-                                <li><a href="">Link 34</a></li>
-                                <li><a href="">Link 35</a></li>
-                                <li><a href="">Link 36</a></li>
-                                <li><a href="">Link 37</a></li>
-                                <li><a href="">Link 38</a></li>
-                                <li><a href="">Link 39</a></li>
-                                <li><a href="">Link 30</a></li>
+                                <a
+                                    class="block my-2 font-medium hover:underline"
+                                    >技术文章</a
+                                >
+                                <li>
+                                    <a
+                                        href="https://www.deepproteomics.cn/bsi-publications/"
+                                        >BSI Publications</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.deepproteomics.cn/user-publications/"
+                                        >User Publications</a
+                                    >
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -93,16 +163,17 @@
     nav {
         background-color: yellowgreen;
     }
-    nav a {
-        background-color: green;
-    }
 
     a:hover ~ ul.nav_submenu {
         display: flex;
         flex-wrap: wrap;
         position: absolute;
-        width: 10rem;
-        margin-top: -0.1rem;
+        width: 32rem;
+        margin-top: -0.25rem;
+        font-size: 0.8rem;
+        padding: 0 1rem;
+        border-radius: 0.25rem;
+        background-color: gray;
     }
 
     .nav_submenu {
@@ -113,7 +184,11 @@
         display: flex;
         flex-wrap: wrap;
         position: absolute;
-        width: 10rem;
-        margin-top: -0.1rem;
+        width: 32rem;
+        margin-top: -0.25rem;
+        font-size: 0.8rem;
+        padding: 0 1rem;
+        border-radius: 0.25rem;
+        background-color: gray;
     }
 </style>

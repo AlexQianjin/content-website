@@ -3,7 +3,53 @@ import Main from "../layouts/Main.astro";
 ---
 
 <Main title="Home">
+	<div class="carousel">
+		<ul>
+			<li class="hidden">
+				<img
+					src="/images/Newfeaturesbanner_backgroundonly-2.png"
+					alt="Newfeaturesbanner_backgroundonly-2"
+				/>
+			</li>
+			<li class="hidden">
+				<img
+					src="/images/PEAKSABbanner_backgroundonly.png"
+					alt="PEAKSABbanner_backgroundonly"
+				/>
+			</li>
+			<li class="hidden">
+				<img
+					src="/images/PEAKSOnlinebanner_backgroundonly.png"
+					alt="PEAKSOnlinebanner_backgroundonly"
+				/>
+			</li>
+			<li class="hidden">
+				<img src="/images/virus_small.png" alt="virus_small" />
+			</li>
+		</ul>
+	</div>
 	<div class="flex h-14 w-full lg:w-4/6 min-w-fit mx-auto justify-center">
-		<h1 class="text-2xl text-[#0d6ca3]">基于液相质谱的蛋白质组学及抗体/蛋白测序整体解决方案</h1>
+		<h1 class="text-2xl text-[#0d6ca3]">
+			基于液相质谱的蛋白质组学及抗体/蛋白测序整体解决方案
+		</h1>
 	</div>
 </Main>
+
+<script>
+	const carousel = document.querySelector(".carousel");
+	const slides = carousel.querySelectorAll("li");
+	function showSlide(index) {
+		slides.forEach((slide, i) => {
+			slide.classList.remove("block");
+			if (!slide.classList.contains("hidden")) {
+				slide.classList.add("hidden");
+			}
+			if (i === index) {
+				slide.classList.remove("hidden");
+				slide.classList.add("block");
+			}
+		});
+	}
+
+	showSlide(2);
+</script>

@@ -255,8 +255,11 @@
 </header>
 
 <style>
+    :root {
+        --background-color: #555;
+    }
     nav {
-        background-color: yellowgreen;
+        background-color: var(--background-color);
     }
 
     a:hover ~ ul.nav_submenu {
@@ -268,7 +271,7 @@
         font-size: 0.8rem;
         padding: 0 1rem;
         border-radius: 0.25rem;
-        background-color: gray;
+        background-color: var(--background-color);
     }
 
     .nav_submenu {
@@ -284,6 +287,6 @@
         font-size: 0.8rem;
         padding: 0 1rem;
         border-radius: 0.25rem;
-        background-color: gray;
+        background-color: var(--background-color);
     }
 </style>
